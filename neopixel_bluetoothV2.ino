@@ -59,7 +59,7 @@ void inc(){
   for(int i=0;i<16;i++){
     Neo.setPixelColor(i,R,G,B);
     Neo.show();
-    Neo.delay(100);
+    delay(100);
   }
   Neo.clear();
 }
@@ -67,12 +67,12 @@ void dec(){
   for(int i=0;i<16;i++){
     Neo.setPixelColor(i,R,G,B);
     Neo.show();
-    Neo.delay(100);
+    delay(100);
   }
   for(int i =15;i>=0;i--){
     Neo.setPixelColor(i,0,0,0);
     Neo.show();
-    Neo.delay(100);
+    delay(100);
   }
   Neo.clear();
 }
@@ -81,6 +81,6 @@ void snake(){
     Neo.setPixelColor(i,R,G,B);
     Neo.setPixelColor(i-4,0,0,0);
     Neo.show();
-    Neo.delay(100);
+    delay(100);
   }
 }
